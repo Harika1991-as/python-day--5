@@ -1,0 +1,24 @@
+salary=int(input("enter the current salary"))
+grade=input("enter the grade of the employee")
+if(grade=="A" or grade=="a") and (salary>10000):
+    bonus=salary*0.05
+    print("Salary :" ,salary)
+    print("Bonus :" ,bonus)
+    print("Total to be paid :",(salary+bonus))
+elif(grade=="B" or grade=="b") and (salary>10000):
+    bonus=salary*0.10
+    print("Salary :",salary)
+    print("Bonus :",bonus)
+    print("Total to be paid :",(salary+bonus))
+elif(salary<10000) and (grade=="A" or grade=="a"):
+    bonus=(salary*0.05)
+    additional=(salary*0.02)
+    Bonus=bonus+additional
+    print("Salary :",salary)
+    print("Bonus :",Bonus)
+    print("Total to be paid :",(salary+Bonus))
+elif(salary<10000) and (grade=="B" or grade=="b"):
+    bonus=(salary*0.10)
+    additional=(salary*0.02)
+    Bonus=bonus+additional
+    print("Total to be paid :",(salary+Bonus))
